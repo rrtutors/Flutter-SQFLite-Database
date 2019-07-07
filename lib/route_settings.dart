@@ -13,28 +13,18 @@ class RouteSettngsPage extends RouteSettings{
     switch(settings.name)
     {
       case "/":
-        /*UserDatabase().getUser().then((result){
-          if( result > 0)*/
             return MaterialPageRoute(builder: (_)=>SplashPage());
-         /* else
-            return MaterialPageRoute(builder: (_)=>LoginPage());
-        });*/
-
-        //return MaterialPageRoute(builder: (_)=>LoginPage());
         break;
       case "/splash":
         return MaterialPageRoute(builder: (_)=>SplashPage());
         break;
         case "/login":
         return MaterialPageRoute(builder: (_)=>LoginPage());
-
         break;
       case "/signup":
-
         return MaterialPageRoute(builder: (_)=>SignupPage());
         break;
       case "/home":
-
         return MaterialPageRoute(builder: (_)=>Homepage());
         break;
 
